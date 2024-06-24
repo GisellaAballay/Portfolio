@@ -1,7 +1,7 @@
 
 const socialList = document.getElementById("social-list");
 const worksArticle = document.getElementById("works-list");
-
+const education = document.getElementById("study-list");
 
 
 const renderSocialLinks = () => {
@@ -31,7 +31,6 @@ const renderSocialLinks = () => {
     </li>`
   });
 }
-
 
 const renderWorks = () => {
   const worksList = [
@@ -78,6 +77,21 @@ const renderWorks = () => {
   });
 }
 
+const renderStudy = () => {
+  const studyList = [
+    {
+      name:"Universidad Tecnológica Nacional",
+      yearStart:"2023",
+      yearEnd:"0",
+      role:"Fullstack developer",
+      description:"Fundamentos de programación y algoritmos, HTML, CSS y JavaScript. Frontend y backend. Construcción de APIs y servicios web"
+    },
+  ]
+
+  studyList.forEach((education) => {
+    
+  });
+}
+
 renderSocialLinks()
 renderWorks()
-
