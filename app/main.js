@@ -2,7 +2,7 @@
 const socialList = document.getElementById("social-list");
 const worksArticle = document.getElementById("works-list");
 const education = document.getElementById("study-list");
-
+const project = document.getElementById("project-list");
 
 const renderSocialLinks = () => {
   const socialIcons = [

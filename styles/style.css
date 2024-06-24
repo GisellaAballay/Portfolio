@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-p, span, i{
+p, span, i, li{
   font-family: var(--f-text);
   color: var(--grey-text);
 }
@@ -139,4 +139,42 @@ section{
 .s-work .cont-name-work, .s-study .cont-name-study{
   display: flex;
   justify-content: space-between;
+}
+
+/* Project section */
+.s-project article {
+  background-color: yellowgreen;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.s-project article > div{
+  background-color: violet;
+  padding: 10px 10px;
+}
+
+.s-project .project-header{
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s-project .project-header span{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(2, 101, 2);
+  border-radius: 50%;
+  display: block;
+  animation: show 1s infinite alternate;
+}
+
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
