@@ -111,6 +111,11 @@ section{
 /* Bio section */
 
 /* Work section */
-.s-work{
 
+.s-work{
+ background-color: lightcoral;
+}
+
+.s-work article > div {
+  background-color: #fff;
 }
