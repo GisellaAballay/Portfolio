@@ -68,7 +68,7 @@ const renderWorks = () => {
   worksList.forEach((work) => {
     worksArticle.innerHTML += `
     <div>
-      <div>
+      <div class= "cont-name-work">
         <h3><a href="">${work.name}</a></h3>
         <h4>${work.yearStart} - ${work.yearEnd != 0 ? work.yearEnd : "Actualidad"}</h4>
       </div>
