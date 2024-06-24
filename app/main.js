@@ -84,14 +84,23 @@ const renderStudy = () => {
       yearStart:"2023",
       yearEnd:"0",
       role:"Fullstack developer",
-      description:"Fundamentos de programación y algoritmos, HTML, CSS y JavaScript. Frontend y backend. Construcción de APIs y servicios web"
-    },
+      description:"Fundamentos de programación y algoritmos, HTML, CSS y JavaScript. Librerías Frontend y lenguaje de backend. Construcción de APIs y servicios web"
+    }
   ]
 
-  studyList.forEach((education) => {
-    
+  studyList.forEach((studies) => {
+    education.innerHTML += `
+    <div>
+      <div class= "cont-name-study">
+        <h3><a href="">${studies.name}</a></h3>
+        <h4>${studies.yearStart} - ${studies.yearEnd != 0 ? studies.yearEnd : "Actualidad"}</h4>
+      </div>
+      <h4>${studies.role}</h4>
+      <p>${studies.description}</p>
+    </div>`
   });
 }
 
 renderSocialLinks()
 renderWorks()
+renderStudy()
