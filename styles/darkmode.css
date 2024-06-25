@@ -1,0 +1,17 @@
+.theme-mode{
+  background-color: rgb(243, 172, 172);
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  border: none;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sun {
+  display: none;
+}
