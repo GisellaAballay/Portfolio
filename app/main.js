@@ -2,7 +2,7 @@
 const socialList = document.getElementById("social-list");
 const worksArticle = document.getElementById("works-list");
 const education = document.getElementById("study-list");
-const project = document.getElementById("project-list");
+const projects = document.getElementById("project-list");
 
 const renderSocialLinks = () => {
   const socialIcons = [
@@ -101,6 +101,39 @@ const renderStudy = () => {
   });
 }
 
+const renderProjects = () => {
+  const projectsList = [
+    {
+      title: "Proyecto 1",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, impedit.",
+      tag1: "Lorem ipsum dolor",
+      tag2: "En desarrollo"
+    },
+    {
+      title: "Proyecto 2",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, impedit.",
+      tag1: "Lorem ipsum dolor",
+      tag2: "En desarrollo"
+    }
+  ]
+
+  projectsList.forEach((project) => {
+    projects.innerHTML += `
+      <div class="project">
+        <div class="project-header">
+          <h3>${project.title}</h3>
+          <span class="project-status"></span>
+        </div>
+        <p>${project.description}</p>
+        <ul>
+          <li>${project.tag1}</li>
+          <li>${project.tag2}</li>
+        </ul>
+      </div>`
+  });
+}
+
 renderSocialLinks()
 renderWorks()
 renderStudy()
+renderProjects()
