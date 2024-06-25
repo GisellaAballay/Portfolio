@@ -1,43 +1,4 @@
-@font-face {
-  font-family: "font-text";
-  src: url(../assets/font/Menlo-Regular.ttf);
-  }
 
-:root {
-  --f-title: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --f-text: "font-text";
-  --grey-text: #667392;
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family: var(--f-title);
-  font-weight: 400;
-}
-
-
-p, span, i, li{
-  font-family: var(--f-text);
-  color: var(--grey-text);
-}
-
-/* Body */
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Main */
-main{
-  width: 800px;
-  /* background: yellowgreen; */
-  min-height: 100vh;
-}
-
-section{
-  padding: 20px;
-}
 
 /* Header section */
 .s-header{
@@ -164,7 +125,7 @@ section{
   padding-right: 5px;
 }
 
-.s-project .project-header span{
+.s-project .project-header .production {
   width: 10px;
   height: 10px;
   background-color: rgb(2, 101, 2);

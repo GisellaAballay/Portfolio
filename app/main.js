@@ -102,18 +102,19 @@ const renderStudy = () => {
 }
 
 const renderProjects = () => {
+  
   const projectsList = [
     {
       title: "Proyecto 1",
+      status: 1,
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, impedit.",
-      tag1: "Lorem ipsum dolor",
-      tag2: "En desarrollo"
+      tags: ["Lorem ipsum dolor", "En desarrollo"]
     },
     {
       title: "Proyecto 2",
+      status: 0,
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, impedit.",
-      tag1: "Lorem ipsum dolor",
-      tag2: "En desarrollo"
+      tags: ["Lorem ipsum dolor", "En desarrollo"]
     }
   ]
 
@@ -121,14 +122,11 @@ const renderProjects = () => {
     projects.innerHTML += `
       <div class="project">
         <div class="project-header">
-          <h3>${project.title}</h3>
-          <span class="project-status"></span>
+          <h3><a href="https://google.com" target="_blank">${project.title}</a></h3>
+          <span class="${project.status === 1 ? 'production' : ''}"></span>
         </div>
         <p>${project.description}</p>
-        <ul>
-          <li>${project.tag1}</li>
-          <li>${project.tag2}</li>
-        </ul>
+        <ul>${project.tags.map((tag) => `<li>${tag}</li>`).join("")}</ul>
       </div>`
   });
 }
