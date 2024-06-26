@@ -25,3 +25,18 @@
   color: rgb(198, 196, 196);
 }
 
+/* CAMBIO CLARO/OSCURO */
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: rgb(109, 109, 109);
+  color: white;
+}
