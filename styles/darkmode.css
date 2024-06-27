@@ -27,7 +27,7 @@
 }
 #sun {
   display: none;
-  color: rgb(198, 196, 196);
+  color: var(--grey-dark);
 }
 
 /* CAMBIO CLARO/OSCURO */
