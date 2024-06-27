@@ -1,8 +1,13 @@
+:root{
+  --grey-dark: rgb(72, 72, 72);
+}
+
 .theme-mode{
+  background-color: var(--grey-dark);
   position: fixed;
   bottom: 50px;
   right: 50px;
-  border: 1px solid rgb(209, 208, 208);
+  border: 1px solid rgb(208, 208, 208);
   padding: 10px;
   font-size: 30px;
   border-radius: 50%;
@@ -37,6 +42,10 @@ body {
 }
 
 .dark-mode {
-  background-color: rgb(109, 109, 109);
+  background-color: var(--grey-dark) ;
+  color: white;
+}
+
+.dark-mode *:not(i) {
   color: white;
 }

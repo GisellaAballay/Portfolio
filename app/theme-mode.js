@@ -7,16 +7,18 @@ const $body = document.body;
 const handleDisplayIcons = () => {
   let displaySun = getComputedStyle($sun).display;
   if (displaySun === "none") {
-    $sun.style.display = "block";  
+    $sun.style.display = "block";
   } else {
-    $sun.style.display = "none"
+    $sun.style.display = "none";
   }
 
   let displayMoon = getComputedStyle($moon).display;
   if (displayMoon === "none") {
-    $moon.style.display = "block";  
+    $moon.style.display = "block"; 
+    $button.style.backgroundColor = "rgb(70, 70, 70)";
   } else {
-    $moon.style.display = "none"
+    $moon.style.display = "none";
+    $button.style.backgroundColor = "rgb(208, 208, 208)";
   }
 };
 
